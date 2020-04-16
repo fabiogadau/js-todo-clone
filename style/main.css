@@ -6,20 +6,21 @@
 }
 
 body {
-  width: 100vw;
+  max-width: 100vw;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color:  #354ed1 ;
+  background-color:  #354ed1;
   color: #fff;
 }
 
 /* Template nascosto per elementi JS */
 .template {
-  display: none;;
+  display: none;
 }
 
 /* Header */
 header {
+  max-width: 100%;
   margin-bottom: 20px;
   padding: 20px;
   background-color: black;
@@ -33,7 +34,6 @@ header h1 {
 /* App */
 #app {
   max-width: 1170px;
-  height: 100vh;
   margin: 0 auto;
   padding: 30px;
   display: flex;
@@ -67,10 +67,6 @@ main {
 .add-reminder:hover,
 .add-reminder:focus {
   background-color: #fff;
-}
-
-.todo {
-  max-width: 100%;
 }
 
 /* Reminders della Todo List */
@@ -113,6 +109,10 @@ li.special {
 
 .todo li .fa-trash:hover {
   color: red;
+}
+
+.todo li .fa-star {
+  margin-left: 20px;
 }
 
 .todo li .fa-star,
