@@ -7,10 +7,31 @@ recap funzionalità: mostrare, aggiungere e eliminare elementi dalla lista
 
 $( document ).ready(function() {
 
+  // Sorgente dati
+  var previousData = [
+    'Portare a spasso il cane',
+    'Portare a spasso il gatto',
+    'Portare a spasso il t-rex',
+    'Portare a spasso il spasso',
+    'Spassare a porto il porto'
+  ];
+
   // Referenze
   var list = $('.todo');
   var newInput = $('.add-reminder');
   var app = $('#app');
+
+  // Aggiunta item di previousData alla Todo List
+  for ( var i = 0; i < previousData.length; i++ ) {
+    // Clono i li di .template
+    var reminderList = $('.template li').clone();
+
+    // Aggiungo testo dinamico di previousData ai li di .template
+    reminderList.prepend(previousData[i]);
+
+    // Aggiungo i cloni alla Todo List
+    list.append(reminderList);
+  };
 
   // Aggiunta di un nuovo reminder alla Todo List
   newInput.keyup(function(event) {

@@ -6,15 +6,28 @@
 }
 
 body {
+  width: 100vw;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: tomato;
+  background-color:  #354ed1 ;
   color: #fff;
 }
 
 /* Template nascosto per elementi JS */
 .template {
   display: none;;
+}
+
+/* Header */
+header {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: black;
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(23,23,23,1) 35%);
+}
+
+header h1 {
+  text-transform: uppercase;
 }
 
 /* App */
@@ -28,18 +41,12 @@ body {
   align-items: center;
 }
 
-/* Todo List Title */
-h1 {
-  margin-bottom: 20px;
-  color: lightgreen;
-}
-
 /* Todo List */
 main {
   width: 100%;
   padding: 20px;
   border-radius: 25px;
-  background-color: steelblue;
+  background-image: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 .add-reminder {
@@ -66,27 +73,19 @@ main {
   max-width: 100%;
 }
 
+/* Reminders della Todo List */
 .todo li {
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding: 5px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 5px;
 }
 
 .todo li:last-child {
   border-bottom: none;
-}
-
-.todo li i {
-  cursor: pointer;
-  opacity: .4;
-  transition: opacity .2s;
-}
-
-.todo li i:hover {
-  opacity: 1;
 }
 
 li.done {
@@ -94,7 +93,28 @@ li.done {
 }
 
 li.special {
-  background-color: sandybrown;
+  background-color: tomato;
+}
+
+/* Icone */
+.todo li i {
+  cursor: pointer;
+}
+
+.todo li .fa-trash {
+  transition: color .2s;
+}
+
+.todo li .fa-trash:hover {
+  color: red;
+}
+
+.todo li .fa-star {
+  margin-right: 10px;
+}
+
+.todo li .fa-star:hover {
+  color: aqua;
 }
 
 .fa-star.special-color {
