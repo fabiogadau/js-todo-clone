@@ -12,10 +12,12 @@ body {
   color: #fff;
 }
 
+/* Template nascosto per elementi JS */
 .template {
   display: none;;
 }
 
+/* App */
 #app {
   max-width: 1170px;
   height: 100vh;
@@ -26,11 +28,13 @@ body {
   align-items: center;
 }
 
+/* Todo List Title */
 h1 {
   margin-bottom: 20px;
   color: lightgreen;
 }
 
+/* Todo List */
 main {
   width: 100%;
   padding: 20px;
@@ -87,4 +91,12 @@ main {
 
 li.done {
   text-decoration: line-through;
+}
+
+li.special {
+  background-color: sandybrown;
+}
+
+.fa-star.special-color {
+  color: aqua;
 }
