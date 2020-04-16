@@ -60,8 +60,10 @@ $( document ).ready(function() {
   });
 
   // Aggiunta text-decoration al reminder completato
-  app.on('click', '.todo li', function() {
-    $(this).toggleClass('done');
+  app.on('click', '.todo li .fa-check', function() {
+    var icons = $(this).parent();
+    icons.parent().toggleClass('done');
+    $(this).toggleClass('special-color');
   });
 
   // Aggiunta possibilità per l'utente di evidenziare dei reminder speciali

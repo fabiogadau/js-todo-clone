@@ -97,6 +97,12 @@ li.special {
 }
 
 /* Icone */
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .todo li i {
   cursor: pointer;
 }
@@ -109,14 +115,16 @@ li.special {
   color: red;
 }
 
-.todo li .fa-star {
+.todo li .fa-star,
+.todo li .fa-check {
   margin-right: 10px;
 }
 
-.todo li .fa-star:hover {
+.todo li .fa-star:hover,
+.todo li .fa-check:hover {
   color: aqua;
 }
 
-.fa-star.special-color {
+.fas.special-color {
   color: aqua;
 }
