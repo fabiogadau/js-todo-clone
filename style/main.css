@@ -44,6 +44,7 @@ header h1 {
 /* Todo List */
 main {
   width: 100%;
+  min-height: 735px;
   padding: 20px;
   border-radius: 25px;
   background-image: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
@@ -127,4 +128,11 @@ li.special {
 
 .fas.special-color {
   color: aqua;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: black;
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(23,23,23,1) 35%);
 }
